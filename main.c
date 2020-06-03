@@ -3,7 +3,7 @@
 int main(void) {
   printf("Hello World\n");
   int a, b, n;
-  printf("1.+, 2.-, 3.*, 4./ select : ");
+  printf("1.+, 2.-, 3.*, 4./, 5.%% select : ");
   scanf("%d", &n);
   printf("input a,b:");
   scanf("%d %d", &a, &b);
@@ -16,6 +16,8 @@ int main(void) {
       printf("%d * %d = %d\n", a, b, a * b);
     case 4:
       printf("%d / %d = %d\n", a, b, a / b);
+    case 5:
+      printf("%d %% %d = %d\n", a, b, a % b);
   }
   return 0;
 }
